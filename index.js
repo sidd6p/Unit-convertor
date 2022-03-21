@@ -15,22 +15,22 @@ let massEle2 = document.getElementById("mass-ele-2");
 let massEle3 = document.getElementById("mass-ele-3");
 let massEle4 = document.getElementById("mass-ele-4");
 
-inputEle.addEventListener("onchange", showConversion);
+inputEle.addEventListener("input", showConversion);
 
 
 function showConversion() {
     lengthEle1.innerText = inputEle.value;
-    lengthEle2.innerText = inputEle.value * 3.28084;
+    lengthEle2.innerText = (inputEle.value * 3.28084).toFixed(6);
     lengthEle3.innerText = inputEle.value;
-    lengthEle4.innerText = inputEle.value * 0.3048;
+    lengthEle4.innerText = (inputEle.value * 0.3048).toFixed(6);
 
     volumeEle1.innerText = inputEle.value;
-    volumeEle2.innerText = inputEle.value * 0.264172;
+    volumeEle2.innerText = (inputEle.value * 0.264172).toFixed(6);
     volumeEle3.innerText = inputEle.value;
-    volumeEle4.innerText = inputEle.value * 3.78541;
+    volumeEle4.innerText = (inputEle.value * 3.78541).toFixed(6);
 
     massEle1.innerText = inputEle.value;
-    massEle2.innerText = inputEle.value * 2.20462;
+    massEle2.innerText = (inputEle.value * 2.20462).toFixed(6);
     massEle3.innerText = inputEle.value;
-    massEle4.innerText = inputEle.value * 0.453592;
+    massEle4.innerText = (inputEle.value * 0.453592).toFixed(6);
 }
