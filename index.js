@@ -15,7 +15,7 @@ let massEle2 = document.getElementById("mass-ele-2");
 let massEle3 = document.getElementById("mass-ele-3");
 let massEle4 = document.getElementById("mass-ele-4");
 
-inputEle.addEventListener("click", showConversion);
+inputEle.addEventListener("onchange", showConversion);
 
 
 function showConversion() {
